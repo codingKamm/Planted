@@ -12,21 +12,22 @@ struct MainTabView: View {
         TabView {
             
             
-            ContentView()
+        ContentView()
                 .tabItem {
-                    Label("Learn", systemImage: "lightbulb.fill")
+                    Label("Home", systemImage: "house")
             }
-//
-//            AvoidView()
-//                .tabItem {
-//                    Label("Avoid", systemImage: "exclamationmark.triangle.fill")
-//            }
-//
-//            ColorView()
-//                .tabItem {
-//                    Label("Practice", systemImage: "paintpalette.fill")
+
+        PlantProfileTemplateView()
+                .tabItem {
+                    Label("My Plants", systemImage: "leaf")
             }
-        }// End of TabView    }
+
+        ContentView()
+                .tabItem {
+                    Label("Water Reminder", systemImage: "drop")
+            }
+        }// End of TabView
+    }
 }
 
 struct MainTabView_Previews: PreviewProvider {

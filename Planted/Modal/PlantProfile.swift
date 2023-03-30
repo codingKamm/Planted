@@ -10,11 +10,11 @@ import SwiftUI
 struct PlantProfile {
     var id: UUID
     var plantName: String
-    var age: Double
+    var age: Int
     var plantImage: Image
     var light: String
-    var tempature: Double
-    var waterIntake: Double
+    var tempature: Int
+    var waterIntake: Int
     var size: String
     var description: String 
 }
